@@ -1,0 +1,620 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/is/all.is"></script>
+        <style>
+            
+            .navbar
+{
+  overflow:hidden;
+  background-color:#0f2c6b ;
+  position:fixed;
+  top:0;
+  width:100%;
+
+ }
+ .navbar a{
+ float:left;
+ display:block;
+ text-align:center;
+ padding:14px 16px;
+ color:white;
+ }
+ .navbar a:hover
+ {
+   background-color: rgba(238, 225, 225, 0.438);
+   color:black;
+ }
+
+ section
+ {
+   background-color:#0f2c6b ;
+  width:98vw;
+  height:60vh;
+  
+
+ }
+.content
+{
+  
+  padding-left:50px;
+  
+}
+   
+
+           
+            .grid-container {
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  padding:auto;
+  grid-gap:5px;
+}
+
+
+.grid-item {
+  padding:5%;
+  font-size:100%;
+}
+.vl
+{
+    border-right:3px solid rgba(128, 128, 128, 0.445);
+    height:150px;
+    float:right;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  padding:auto;
+  grid-gap:5px;
+}
+
+
+
+
+.text
+{
+    text-decoration:overline;
+    font-size:20px;
+    color:rgb(62, 83, 156);
+}
+.text1
+{
+    
+    font-size:80%;
+    color:white;
+}
+
+.text2
+{
+  font-weight:bold;
+  font-size:30px;
+  color:white;
+}   
+.con
+{
+    float:left;
+    background-color:white;
+    border-radius:25px;
+    padding:5px;
+    color:rgb(56, 121, 207);
+    font-size:15px;
+}
+p
+{
+  margin:10px;
+}
+.main
+{
+  background-color:rgb(5, 22, 68);
+  width:100%;
+  height:60vh;
+  text-align:center;
+}
+.con1
+{
+  color:white;
+  padding-top:60px;
+}
+.images
+{
+  background-color:white;
+  width:100%;
+  height:60vh;
+}
+.block
+{
+  background-color:rgb(5, 22, 68);
+  width:100%;
+  height:30vh;
+  text-align:center;
+}
+.con2
+{
+  padding-top:30px;
+  color:white;
+}
+input[type=submit]
+{
+  border-radius:25px;
+  background-color:rgb(56, 121, 207);
+  border-color:rgb(56, 121, 207);;
+}
+@media screen and (max-width: 600px) 
+{
+  .navbar
+  {
+    display:none;
+  }
+.navbar1
+{
+  
+  background-color:#0f2c6b ;
+  position: fixed;
+  top:0;
+  width:100%;
+ }
+.dropdown {
+  float:right;
+  overflow: hidden;
+  padding-right:30px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:rgba(238, 225, 225, 0.438);;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgba(15, 15, 87, 0.842);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.line1
+{
+ background-color:white;
+ width:20px;
+ height:2px;
+ margin:4px;
+}
+
+}
+
+.image
+{
+  margin-left:40%;
+  padding-top:50px;
+  width:50px;
+  height:30px;
+}
+.font1
+{
+  font-size:20px;
+  font-weight:bold;
+  color:rgb(26, 88, 180);
+}
+.register
+{
+  background-color:rgb(26, 88, 180); 
+  border-radius:25px;
+  color:white;
+  width:90px;
+  height:25px;
+  text-align: center;
+  padding:5px ;
+  padding-top:10px;
+}
+
+.sign
+{
+  padding:10px;
+  float:right;
+  margin-right:10%;
+}
+
+
+
+button:hover {
+  opacity:1;
+}
+
+
+
+
+
+
+
+/* Add padding and center-align text to the container */
+.container1 {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:#0f2c6b;
+  padding-top: 50px;
+}
+
+
+*/Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+.main1
+            {
+                background-color:#0f2c6b ; 
+                width:100%;
+                height:100%;
+                align-items: center;
+            }
+            .content1
+            {
+                background-color:white;
+                margin-left:50%;
+                
+                width:40vw;
+                height:65vh;
+                border-radius:25px;
+                
+            }
+            .text
+{
+    text-decoration: overline;
+    font-size:20px;
+    color:rgb(62, 83, 156);
+}
+.con2{
+    padding-top:6%;
+    margin-left:10%;
+}
+input[type=text]
+{
+    border-color:rgb(84, 109, 218);
+    width:100%;
+}
+input
+{
+    border-color:rgb(84, 109, 218);
+    
+}
+td
+{
+      padding:5px;  
+    
+}
+.image1
+{
+  margin-left:60px;
+  padding-top:50px;
+  width:50px;
+  height:30px;
+}
+input[type=password],input[type=email]
+{
+    border-color:rgb(84, 109, 218);
+    width:80%;
+}
+
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <a class="active" href="javascript:void(0)">Home</a>
+    <a href="{% url "about" %}">About us</a>
+    <a href="javascript:void(0)">Contact</a>
+    <a href="{% url "main" %}">View</a>
+    <a href="javascript:void(0)">Owner</a>
+    <a href="{% url "con" %}">Contact us</a>
+    <div class="sign">
+      <button onclick="document.getElementById('id01').style.display='block'">Sign_up</button>
+    
+   <button onclick="document.getElementById('id02').style.display='block'">Login</button>
+  </div>
+  </div>
+
+  <div class="navbar1">
+    <div class="dropdown">
+      <button class="dropbtn">
+    <div class="line1"></div>
+    <div class="line1"></div>
+       <div class="line1"></div>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About_us</a>
+        <a href="#">View</a>
+        <a href="#">Owner</a>
+        <a href="#">Services</a>
+        <a href="#">Contact us</a>
+
+      </div>
+    </div> 
+  </div>
+  
+  
+
+      <section>
+        <div class="image">
+          {% load static %}<img src="{% static "app1/media/homeHerobanner3.png" %}" width="700px", height="300px">
+          
+        </div>
+        <div class="content">
+<div class="text2">
+
+<p>OVER 5,00,000</p>
+<p style=font-size:25px;color:white;font-weight:bold">  REGISTERED MEMBERS</p>
+<p style="color:white;font-size:12px">FIND YOUR PERFECT ROOM OR GET YOUR ROOM RENTED FAST</p>
+<form>
+<input type="search" placeholder="Search" name="search">
+<button type="submit"><i class="fas fa-search-plus"></i></button>
+</form>
+<div class="con">
+NEED A PG ON RENT
+</div>
+<div class="con" style="margin-left:15px">GIVE A PG ON RENT
+</div>
+</div>
+</section>
+<div class="grid-container">
+    <div class="grid-item">
+      <div class="vl"></div>
+<p style="font-size:20;font-weight:bold;">FREE</p>
+<pre> Register now to try us
+ completely</pre>
+<div class="register">Register</div>
+</div>
+    
+    <div class="grid-item">
+      <div class="vl"></div>
+    <div class="font1"><p>No.1</p></div>
+    <p style="color:rgb(26, 88, 180);">Indian Roommate Site</p>
+    <pre> 5,00,000 People,55 Area
+    in Ahmedabad</pre>
+    <p>> Register Now</p>
+    </div>
+    <div class="grid-item">
+    <div class="vl"></div>
+    <div class="font1"><p>5,00,000</p></div>
+    <p style="color:rgb(26, 88, 180);">Registered members</p>
+    <p>Connecting indians over the web</p>
+    <br>
+    >Find Your PG
+
+    </div>
+    <div class="grid-item">
+      <div class="font1"><p>Quick Help</p></div>
+      <p style="color:rgb(26, 88, 180);">Click here for live support</p>
+      <pre> Get immediate assistance for 
+      any query here</pre>
+
+      <p>> Contact us with Phone/Email</p>
+</div>
+</div>
+<div class="main">
+<div class="con1">
+<h3>Amenities List</h3>
+<pre>We provide all the amenities are surely available for all our service places.Some of the items only
+you may get by request,Because that type of aminities are not mandatory</pre>
+</pre>
+<div class="grid-container1">
+  <div class="grid-item">Air conditioner
+  </div>
+  <div class="grid-item">Balcony
+  </div>
+  <div class="grid-item">Hot & Cold Water
+  </div>
+  <div class="grid-item">Extra Bed
+  </div>
+  <div class="grid-item">Flat Tv
+  </div>
+  <div class="grid-item">InterCom
+  </div>
+  <div class="grid-item">Locker
+  </div>
+  <div class="grid-item">Wifi
+  </div>
+  <div class="grid-item">Read Table
+  </div>
+  </div>
+</div>
+</div>
+<div class="images"></div>
+<div class="block">
+<div class="con2">
+<p>Save Time, save money!</p>
+<p style="font-size:12px;">Sign up and we'll send the best deals to you</p>
+<form>
+<input type="email-id" value="Your E-mail" multiple>
+<input type="submit" value=Subscribe>
+</form>
+</div>
+</div>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  
+        <div class="cancel">
+            
+        </div>
+        <div class="image1">
+          <br>
+          <br>
+          <br>
+          {% load static %}<img src="{% static "app1/media/undraw_Mobile_login_re_9ntv.png" %}" width="400px", height="350px"></div>
+            <br>
+            <div class="content1">
+                <div class="con2">
+                <div class ="text"><h3>SIGNUP</h3></div>
+                <form>
+                <table>
+                <tr>
+                <td><label>Name</label></td>
+                </tr>
+                <tr>
+                <td colspan="2"><input type="text"></td>
+                </tr> 
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td><label>Mobile No.*</label></td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email" multiple></td>
+                        <td><input type="tel"  name="phone-no" pattern="[0-9]" maxlength="10" required>
+                        
+                    </tr>
+                    <tr>
+                        <td><label>Password*</label></td>
+                        <td><label>Repeat Password*</label></td>
+                        
+                    </tr>
+                    <tr>
+    
+                        <td><input type="password"  id="password" required></td>
+                        <td><input type=""password"  id="confirm_password" required>
+                        
+                    </tr>
+                </table>   
+                    <br>
+                    
+                
+                <pre>                      <input type="submit" value="SIGN-UP"></pre>
+                </form>
+
+                <p style="color:rgb(71, 81, 170);">Existing User? Login </p>
+            </div>
+            </div>
+        
+        
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+  
+    <br>
+    <div class="image1">
+      <br>
+      <br>
+      
+      {% load static %}<img src="{% static "app1/media/undraw_Access_account_re_8spm.png" %}" width="400px", height="350px"></div>
+    <div class="content1">
+        <div class="con2">
+        <div class ="text"><h3>LOGIN</h3></div>
+        <form>
+            <label style="color: black;">E-mail</label><br>
+            <input type="email" name="email" multiple required><br><br>
+            <label style="color: black;">Password</label><br>
+            <input type="password" name="password" required>
+           
+            <pre style="color:rgb(35, 35, 128);font-weight: bold">                         
+                                    Forgot Password?</pre>
+            <br>
+            
+            <pre>                      <input type="submit" value="LOG-IN"></pre>
+        </form>
+        <p style="color:rgb(71, 81, 170);">Don't have an account? Sign up</p>
+    </div>
+    </div>
+  
+  </form>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id02');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  
+
+
+</body>
+</html>
