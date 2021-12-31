@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <body>
+            
+                 {% for i in a %}
+                 <ul>
+                <li>{{i.name}}</li>
+                <li>{{i.rollno}}</li>
+                <a href="{% url "update" i.id %}">update info</a>
+                
+                
+              </ul>
+              {% endfor %}
+        </body>
+    </head>
+</html>

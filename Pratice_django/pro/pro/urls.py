@@ -16,13 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app1.views import example
-from app1.views import data
+from app1.views import data,datas,update_view,details1
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('exp/', example),
     path('dt/', data),
+    path('data/',datas,name="data"),
+    path('<id>/update', update_view,name="update"),
+    path('<id>/',details1),
 
 
 ]
