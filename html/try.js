@@ -1,0 +1,1 @@
+setInterval(function(){console.log("hello how are you");},10);
